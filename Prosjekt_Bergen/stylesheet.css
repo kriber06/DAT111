@@ -3,44 +3,30 @@ body {
     font-family: arial, serif;
 }
 
-#conteiner {
-    display: grid;
-    grid-template-columns:minmax(100px, 1fr);
-    column-gap: 5px;
-    border: 2px solid black;
-}
-
-#conteiner > div {
-    height: 200px;
-    background-color: #aac9c6;
-    border: 1px solid black;
-}
-
 #headline {
     display: flex; 
-    justify-content: center;
-    align-items: center;
-    font-size: 5vw; 
+    justify-content: left;
+    align-items: left;
+    font-size: 3vw; 
     font-weight: bold;
     border-bottom: 1px solid gray;  
-    background-color: rgba(190, 218, 210, 0.5);
-    grid-column: 1 / -1;
-}
+    background-color: #A27b5c;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-column: 1 / -1;}
 
 #top-links{
     display: flex;
     flex-direction: row;
-    position: sticky;
+    position: relative;
     justify-content: center;
     align-items: center;
-    font-size: 4vw;  
+    font-size: 2vw;  
     flex-grow: 1;
     column-gap: 30px;
-    background-color: rgba(190, 218, 210, 1);
+    background-color: #A27b5c;
     top: 0;
-    border-bottom: 1px solid gray;  
     margin-bottom: 5px;
-    grid-column: 1 / -1; 
 }
 
 #top-links a,
@@ -53,7 +39,7 @@ body {
 }
 
 #top-links a:hover{
-    color: green;
+    color: #dcd7c9;
     font-size: 1.2em;
 }
 
