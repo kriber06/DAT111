@@ -1,6 +1,7 @@
 body {
     background-color: #ffffff;
     font-family: arial, serif;
+    background-color: #DCD7C9;
 }
 
 #headline {
@@ -64,9 +65,6 @@ h2 {
     text-align: center;
 }
 
-#bilder {
-    width: 100%;
-}
 
 #bergenby {
     width: 100%;
@@ -80,3 +78,55 @@ h2 {
     text-align: center;
 }
 
+#conteiner{
+    display: grid;
+    margin: 0 auto;
+    width: 60%;
+    height: 60%;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+                       "a a b b"
+                       "a a b b"
+                       "a a b b"
+                       "c c d d"
+                       "c c d d"
+                       "c c d d"
+                       "e e f f"
+                       "e e f f"
+                       "e e f f";
+}
+#conteiner > div {
+  background-color: #aac9c6;
+  border: 1px solid black;
+}
+#a   { grid-area : a; }
+#b   { grid-area : b; }
+#c   { grid-area : c; }
+#d   { grid-area : d; }
+#e   { grid-area : e; }
+#f   { grid-area : f; }
+
+
+#a,
+#b,
+#c,
+#d,
+#e,
+#f {
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(194, 225, 243,0.2);
+    text-align: center;
+    font-size: 18px;
+    border: solid black 1px;
+    border-radius: 10px;
+
+}
+
+#protreter{
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+}
