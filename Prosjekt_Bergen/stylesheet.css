@@ -1,6 +1,7 @@
 body {
     background-color: #ffffff;
     font-family: arial, serif;
+    background-color: #DCD7C9;
 }
 
 #headline {
@@ -78,30 +79,23 @@ h2 {
 }
 
 #conteiner{
-  width: 100%;
-  height: 100%;
-  display: grid;
-  gap: 5px;
-  background-color: #c6c6c6;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(17, 1fr);
-  grid-template-areas:
-                       "a a b b"
+    display: grid;
+    margin: 0 auto;
+    width: 60%;
+    height: 60%;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
                        "a a b b"
                        "a a b b"
                        "a a b b"
                        "c c d d"
                        "c c d d"
                        "c c d d"
-                       "c c d d"
                        "e e f f"
                        "e e f f"
-                       "e e f f"
-                       "e e f f"
-                       "g g h h"
-                       "g g h h" 
-                       "g g h h"
-                       "g g h h";
+                       "e e f f";
 }
 #conteiner > div {
   background-color: #aac9c6;
@@ -113,17 +107,14 @@ h2 {
 #d   { grid-area : d; }
 #e   { grid-area : e; }
 #f   { grid-area : f; }
-#g   { grid-area : g; }
-#h   { grid-area : h; }
+
 
 #a,
 #b,
 #c,
 #d,
 #e,
-#f,
-#g,
-#h {
+#f {
     padding: 10px;
     margin: 20px;
     background-color: rgba(194, 225, 243,0.2);
