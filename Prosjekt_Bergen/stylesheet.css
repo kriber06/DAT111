@@ -141,3 +141,12 @@ position: relative;
   width: 300px;
   height: auto;
 }
+
+#content { 
+    text-align: center;
+}
+
+#logo {
+    width: 100px; 
+    height: auto;
+}
