@@ -226,3 +226,11 @@ position: relative;
     grid-row: 5 / 5;
     text-align: center;
 }
+
+#madConteiner {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px; 
+    column-gap: 20px;
+}
