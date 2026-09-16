@@ -30,7 +30,7 @@ body {
 
 #top-links a,
 #top-links a:link,
-#top-links a:visited,
+a:visited,
 #top-links a:active,
 #top-links a:focus {
     text-decoration: none; 
