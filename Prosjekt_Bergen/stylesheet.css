@@ -239,3 +239,17 @@ position: relative;
     gap: 10px; 
     column-gap: 20px;
 }
+
+#bilderKontact {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;  
+    flex-grow: 1;
+    column-gap: 30px;
+    background-color: #A27b5c;
+    top: 0;
+    margin-bottom: 5px;
+}
