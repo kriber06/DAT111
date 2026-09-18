@@ -267,3 +267,11 @@ position: relative;
   object-fit: cover;
   display: block;
 }
+
+#containerTitle {
+    text-align: center; 
+    background-color: rgba(18, 127, 252, 0.753);  
+    padding: 20px; 
+    border-radius: 10px;
+    font-size: 20px;
+}
