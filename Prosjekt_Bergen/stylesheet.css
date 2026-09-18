@@ -158,7 +158,7 @@ position: relative;
 
 #containerBackdrop {
     text-align: center; 
-background-color: #A27b5c;
+    background-color: #A27b5c;
     margin: 60px; 
     padding: 20px; 
     border-radius: 10px;
@@ -167,7 +167,7 @@ background-color: #A27b5c;
 #undertitle {
     text-align: center; 
     margin: 60px; 
-background-color: #A27b5c;  
+    background-color: #A27b5c;  
     padding: 20px; 
     border-radius: 10px;
 }
@@ -176,6 +176,12 @@ background-color: #A27b5c;
     grid-column: 1 / 2;
     grid-row: 1 / 1;
     text-align: center;
+}
+
+#a1text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 #a2{
