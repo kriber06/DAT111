@@ -158,7 +158,7 @@ position: relative;
 
 #containerBackdrop {
     text-align: center; 
-    background-color: brown; 
+background-color: #A27b5c;
     margin: 60px; 
     padding: 20px; 
     border-radius: 10px;
@@ -167,7 +167,7 @@ position: relative;
 #undertitle {
     text-align: center; 
     margin: 60px; 
-    background-color: brown;  
+background-color: #A27b5c;  
     padding: 20px; 
     border-radius: 10px;
 }
