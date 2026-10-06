@@ -1,0 +1,12 @@
+html{
+    background-color: grey;
+}
+
+#container{
+    top: 10px;
+    padding: 82px;
+    margin: auto;
+    width: 450px;
+    background-color: white;
+    position: relative;
+}
