@@ -1,0 +1,21 @@
+
+.tabell_Film {
+    border-collapse:collapse;
+    width: 100%;
+}
+
+.tabell th,
+.tabell td {
+    border: 1px solid #6c9e5a;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.tabell th {
+    background-color: #f2f2f2;
+}
+
+.tabell tr:nth-child(even) {
+    background-color: #fafafa;
+}
+                                            

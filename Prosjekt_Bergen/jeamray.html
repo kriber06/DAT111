@@ -1,1 +1,66 @@
-<link rel="stylesheet" href="jeamreystyle.css">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Om oss/Jeamray/</title>
+    </head>
+    <link rel="stylesheet" href="jeamreystyle.css">
+    <body>
+        <h1>
+            Overskrift:
+        </h1>
+        <h2>
+            Top 3 i Clash Royale (Ryley kan vdrifisere dette btw, source trust me bro)
+        </h2> 
+
+        <p>Hva er Pi? (Visst du vil sjå noko kult :D)</p>
+        
+        <input type="text" id="svar" placeholder="Skriv her">
+        <button onclick="sjekk()">Sjekk</button>
+        <p id="epost"></p>
+
+        <script>
+            function sjekk() {
+                let svar = document.getElementById("svar").value.replace(",", ".");
+                if (svar == 3.14) {
+                    document.getElementById("epost").innerHTML =
+                    '<a href="mailto:jehonbergen@gmail.com">jehonbergen@gmail.com</a>';
+                } else {
+                    alert("... Prøv på nytt");
+                }
+            }
+        </script>
+
+        <table class="tabell_Film">
+            <thead>
+                <tr>
+                    <th>Plass</th>
+                    <th>Filmer</th>
+                    <th>Filmregissør</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Shutter Island</td>
+                    <td>Martin Scorsese</td>
+                    <td>8,2/10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Fight Club</td>
+                    <td>David Fincher</td>
+                    <td>8,8/10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Avengers Infinity War</td>
+                    <td>Anthony Russo & Joe Russo</td>
+                    <td>8,4/10</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
+</html>
