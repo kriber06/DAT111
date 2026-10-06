@@ -3,7 +3,7 @@ body {
     background-color: #DCD7C9;
 }
 
-#headline {
+.headline {
     display: flex; 
     justify-content: left;
     align-items: left;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-#top-links{
+.top-links{
     display: flex;
     flex-direction: row;
     position: relative;
@@ -28,21 +28,21 @@ body {
     margin-bottom: 5px;
 }
 
-#top-links a,
-#top-links a:link,
+.top-links a,
+.top-links a:link,
 a:visited,
-#top-links a:active,
-#top-links a:focus {
+.top-links a:active,
+.top-links a:focus {
     text-decoration: none; 
     color: #000000;           
 }
 
-#top-links a:hover{
+.top-links a:hover{
     color: #dcd7c9;
     font-size: 1.2em;
 }
 
-#top-links a:focus {
+.top-links a:focus {
     outline: 3px solid rgba(0,0,0,0.15);
     outline-offset: 3px;
 }
