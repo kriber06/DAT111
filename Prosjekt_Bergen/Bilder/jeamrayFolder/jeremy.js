@@ -1,4 +1,3 @@
-
 function sjekk() {
     let svar = document.getElementById("svar").value.replace(",", ".");
         if (svar == 3.14) {
@@ -8,3 +7,4 @@ function sjekk() {
             alert("... Prøv på nytt");
         }
     }
+
