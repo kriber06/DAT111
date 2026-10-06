@@ -143,7 +143,7 @@ position: relative;
 
 .protreter{
   max-width: 100%;
-  width: 300px;
+  width: 200px;
   height: auto;
 }
 
@@ -253,8 +253,6 @@ position: relative;
     position: relative;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;  
-    flex-grow: 1;
     column-gap: 30px;
     background-color: #A27b5c;
     top: 0;
