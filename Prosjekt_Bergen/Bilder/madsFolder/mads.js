@@ -1,9 +1,11 @@
 function chBackcolor(color) {
-   document.body.style.background = color;
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+
+    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
-<input type="button" onclick="chBackcolor('red');">
-    Dette er en knapp
-</input>
+
 
 function greetUser() {
     document.getElementById("greeting").innerHTML = "Hello from external JavaScript!";
@@ -17,3 +19,18 @@ function calculateSum(a, b) {
 document.addEventListener('DOMContentLoaded', function() {
     console.log("External JavaScript file loaded successfully!");
 });
+
+
+var buttons = document.getElementsById("container");
+
+button.onclick = onbuttonclicked;
+
+function onbuttonclicked(){
+    if (onbuttonclicked) {
+        button1.style.backgroundColor = "red";
+        button1.disabled=true;
+    } else {
+        button1.style.backgroundColor = "green";
+        button1.disabled=false;
+      }
+    }

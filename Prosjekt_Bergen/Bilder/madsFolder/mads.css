@@ -2,7 +2,7 @@ html{
     background-color: grey;
 }
 
-#container{
+.container{
     top: 10px;
     padding: 82px;
     margin: auto;
