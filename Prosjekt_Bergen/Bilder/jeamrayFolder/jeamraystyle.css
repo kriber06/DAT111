@@ -6,6 +6,40 @@
     --GreyOlive: #918B76;
     --CharcoalBrown: #434A42;
 }
+.topp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: var(--Evergreen);
+    border-radius: 12px;
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.navn {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--SoftPeach);
+    text-decoration: none;
+}
+
+.topp nav {
+    display: flex;
+    gap: ;
+}
+.topp a {
+    color: white;
+    text-decoration: none;
+}
+.topp nav a:hover {
+    color: var(--SoftPeach);
+}
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
@@ -37,7 +71,7 @@ h2 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-.tabell_Film th,
+.tabell_Film td,
 .tabell_Film {
     padding: 12px 16px;
     text-align: left;
