@@ -74,20 +74,7 @@
             </ul>
             <a class="knapp" href="kontakt.html">Kontakt oss for eit uforpliktande tilbud</a>
         </section>
-     
-        <script>
-            const kort = document.querySelectorAll(".tjeneste");
-            const observer = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("synlig");
-                    }
-                });
-            }, { threshold: 0.2 });
-            kort.forEach(function (k) {
-                observer.observe(k);
-            });
 
-        </script>
+        <script src="bergenjs.js"></script>
     </body>
 </html>
