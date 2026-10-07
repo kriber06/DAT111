@@ -281,7 +281,6 @@ position: relative;
     background-color: #A27b5c;
     padding: 20px;
     border-radius: 10px;
-<<<<<<< Updated upstream
     width: 75%;
 }
 .tips ul{
@@ -294,7 +293,6 @@ position: relative;
 .tips li{
     margin: 8px;
     font-size: 15px;
-=======
 }
 
 /*<<<<< Oppussing CSS >>>>>>*/
@@ -366,5 +364,4 @@ position: relative;
     font-size: 18px;
     color: #3F4E4F;
     line-height: 1.6;
->>>>>>> Stashed changes
 }
