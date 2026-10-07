@@ -1,3 +1,4 @@
+/*Farger*/
 :root {
     --Evergreen: #152614;
     --SoftPeach: #E1CA96;
@@ -6,6 +7,7 @@
     --GreyOlive: #918B76;
     --CharcoalBrown: #434A42;
 }
+/*Topp tekst*/
 .topp {
     display: flex;
     justify-content: space-between;
@@ -17,18 +19,17 @@
     top: 10px;
     z-index: 10;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    gap: 30px;
 }
-
 .navn {
     font-size: 24px;
     font-weight: bold;
     color: var(--SoftPeach);
     text-decoration: none;
 }
-
 .topp nav {
     display: flex;
-    gap: ;
+    gap: 25px;;
 }
 .topp a {
     color: white;
@@ -40,7 +41,15 @@
 html {
     scroll-behavior: smooth;
 }
-
+/*Bilder*/
+img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid var(--Evergreen);
+}
+/*Body*/
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: linear-gradient(var(--CharcoalBrown), var(--Ebony));
@@ -81,6 +90,7 @@ h2 {
     background-color: var(--SoftPeach);
     color: var(--Evergreen)
 }
+
 
 .tabell_Film tbody tr{
     background-color: var(--Evergreen);

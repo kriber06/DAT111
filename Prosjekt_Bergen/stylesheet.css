@@ -294,8 +294,7 @@ position: relative;
     margin: 8px;
     font-size: 15px;
 }
-
-/*<<<<< Oppussing CSS >>>>>>*/
+/*<<<<< Oppussing >>>>>>*/
 .tjeneste {
     display: flex;
     align-items: center;
@@ -306,10 +305,18 @@ position: relative;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translate(40px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.tjeneste.synlig {
+    opacity: 1;
+    transform: translate(0);
 }
 
 .tjeneste:nth-of-type(even) {
-    flex-direction: row reverse;
+    flex-direction: row-reverse;
 }
 
 .tjeneste img {
@@ -317,6 +324,15 @@ position: relative;
     height: 280px;
     object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.4s;
+}
+
+.tjeneste:hover img {
+    transform: scale(1);
+}
+
+.tjeneste-tekst {
+    flex: 1;
 }
 
 .tjeneste-tekst h2 {
@@ -334,7 +350,7 @@ position: relative;
 .knapp:visited {
     display: inline-block;
     margin-top: 10px;
-    padding: 12px, 24px;
+    padding: 12px 24px;
     background-color: #A27B5C;
     color: white;
     text-decoration: none;
@@ -365,6 +381,50 @@ position: relative;
     color: #3F4E4F;
     line-height: 1.6;
 }
+
+.hopp {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hopp a {
+    padding: 8px 18px;
+    border: 2px solid #A27B5C;
+    border-radius: 20px;
+    color: #2C3639;
+    text-decoration: none;
+}
+
+.hopp a:hover {
+    background-color: #A27B5C;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.hvorfor-oss {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.fordeler {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fordeler li::before{
+    content: "✓ ";
+    font-weight: bold;
+
+}
+/*--------------------------*/
 
 .tips {
     display: flex;
@@ -411,3 +471,10 @@ position: relative;
     padding: 0;
     text-align: center;
 }
+
+.top-links a.aktiv {
+    border-bottom: 3px solid #DCD7C9;
+}
+
+
+

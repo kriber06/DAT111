@@ -10,7 +10,7 @@
         <div class="headline"><a href="Index.html"><img class = "logo" src="./Bilder/logo.png" alt="Logo for bolig i Bergen"></a>
             <nav class="top-links">
                 <a href="about.html">Om oss</a>
-                <a href="Oppussing.html">Oppussing</a>
+                <a href="Oppussing.html" class="aktiv">Oppussing</a>
                 <a href="Trelast.html">Trelast</a>
                 <a href="kontakt.html">Kontakt</a>
                 <a href="Tips.html">Tips</a>
@@ -21,45 +21,74 @@
         <header class ="side_intro">
             <h1>Oppussing</h1>
             <p style="text-align: center;">Ønsker du å fornye et eller flere rom? Vi hjelper deg med idé til et ferdig resultat. Enten det gjelder soverommet, kjøkkenet, stuen eller hele boligen, finner vi løsninger tilpasset din stil og budsjett.</p>
+            <div class="hopp">
+                <a href="#bad">Bad</a>
+                <a href="#kjokken">Kjøkken</a>
+                <a href="#soverom">Soverom</a>
+                <a href="#stue">Stue</a>
+            </div>
         </header>
 
         <!-- Boksene av forskjellige tjenester: Bad, Kjøkken, Stue, Soverom -->
-        <section class ="tjeneste">
+        <section class ="tjeneste" id="bad">
             <img src="./Bilder/bad.jpg" alt="Nyoppusset bad">
             <div class="tjeneste-tekst">
                 <h2>Puss opp badet</h2>
-                <p>Kort tekst om bad</p>
+                <p>Drømmer du om eit nytt bad?</p>
+                <p>Badet er rommet der dagen starter og sluttar. Vi gjer det om til ein stad du gler deg til å gå inn i, med varme golv, godt lys og smarte løysingar som utnyttar kvar centimeter.</p>
                 <a class="knapp" href="kontakt.html">Få et tilbud hos oss</a>
             </div>
         </section> 
-        <section class ="tjeneste">
-            <img src="./Bilde/kjokken.jpg" alt="Nyoppusset kjøkken">
+        <section class ="tjeneste" id="kjokken">
+            <img src="./Bilder/Kjokken.webp" alt="Nyoppusset kjøkken">
             <div class="tjeneste-tekst">
                 <h2>Puss opp kjøkkenet</h2>
-                <p>Kort tekst om kjøkken</p>
-                <a class="knapp" href="kontakt.html">Få et tilbud hos oss</a>
+                <p>Kjøkkenet som gjer kvardagen enklare</p>
+                <p>Vi teiknar kjøkkenet rundt slik du brukar det, med romslege skuffar, slitesterke benkeplater og plass til heile familien.</p>
+                <a class="knapp" href="kontakt.html">Sjå kva vi kan få til på ditt kjøkken</a>
             </div>
         </section>
-        <section class ="tjeneste">
-            <img src="./Bilder/soverom.jpg" alt="Nyoppusset soverom">
+        <section class ="tjeneste" id="soverom">
+            <img src="./Bilder/Soverom.jpg" alt="Nyoppusset soverom">
             <div class="tjeneste-tekst">
-                <h2>Puss opp badet</h2>
-                <p>Kort tekst om bad</p>
+                <h2>Puss opp soverom</h2>
+                <p>Sov betre. Våkn rolegare</p>
+                <p>Rolege fargar, mjukt lys og god plass til klede gir det eit ryddig og behageleg rom å kvile i.</p>
                 <a class="knapp" href="kontakt.html">Få et tilbud hos oss</a>
             </div>
         </section>
-        <section class ="tjeneste">
+        <section class ="tjeneste" id="stue">
             <img src="./Bilder/stue.jpg" alt="Nyoppusset stue">
             <div class="tjeneste-tekst">
-                <h2>Puss opp badet</h2>
-                <p>Kort tekst om bad</p>
+                <h2>Puss opp stue</h2>
+                <p>Ei stue du ikkje vil forlate</p>
+                <p>Vi set saman møblar, fargar og lys slik at stua passar like godt til filmkveld som til besøk</p>
                 <a class="knapp" href="kontakt.html">Få et tilbud hos oss</a>
             </div>
         </section> 
 
+        <section class="hvorfor-oss">
+            <h2>Kvifor velge oss</h2>
+            <ul class="fordeler">
+                <li>Fast pris utan skjulte kostnader</li>
+                <li>Godkjende fagfolk</li>
+            </ul>
+            <a class="knapp" href="kontakt.html">Kontakt oss for eit uforpliktande tilbud</a>
+        </section>
      
         <script>
-            
+            const kort = document.querySelectorAll(".tjeneste");
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("synlig");
+                    }
+                });
+            }, { threshold: 0.2 });
+            kort.forEach(function (k) {
+                observer.observe(k);
+            });
+
         </script>
     </body>
 </html>
