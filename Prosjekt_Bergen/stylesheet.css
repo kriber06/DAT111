@@ -281,6 +281,7 @@ position: relative;
     background-color: #A27b5c;
     padding: 20px;
     border-radius: 10px;
+<<<<<<< Updated upstream
     width: 75%;
 }
 .tips ul{
@@ -293,4 +294,77 @@ position: relative;
 .tips li{
     margin: 8px;
     font-size: 15px;
+=======
+}
+
+/*<<<<< Oppussing CSS >>>>>>*/
+.tjeneste {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tjeneste:nth-of-type(even) {
+    flex-direction: row reverse;
+}
+
+.tjeneste img {
+    width: 45%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tjeneste-tekst h2 {
+    margin-top: 0;
+    text-align: left;
+    color: #2C3639;
+}
+
+.tjeneste-tekst p {
+    color: #3F4E4F;
+    line-height: 1.6;
+}
+
+.knapp,
+.knapp:visited {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px, 24px;
+    background-color: #A27B5C;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+
+}
+
+.knapp:hover {
+    background-color: #3F4E4F;
+}
+
+.side_intro {
+    max-width: 700px;
+    margin: 60px auto 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.side_intro h1 {
+    font-size: 48px;
+    color: #2C3639;
+    margin-bottom: 10px;
+}
+
+.side_intro p {
+    font-size: 18px;
+    color: #3F4E4F;
+    line-height: 1.6;
+>>>>>>> Stashed changes
 }
