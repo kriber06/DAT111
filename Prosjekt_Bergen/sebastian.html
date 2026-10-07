@@ -2,26 +2,115 @@
 <html lang="no">
     <head>
         <link rel="stylesheet" href="sebastianstyle.css">
-        <title>Bolig i Bergen</title>
+        <title>Sebastian sin side</title>
         <meta charset="utf-8">
     </head>
 
 
     <body>
-        <div class="headline"><a href="Index.html"><img class = "logo" src="./Bilder/logo.png" alt="Logo for bolig i Bergen"></a>
-            <nav class="top-links">
-                <a href="about.html">Om oss</a>
-                <a href="Oppussing.html">Oppusing</a>
-                <a href="Trelast.html">Trelast</a>
-            </nav>
-        </div>
-        <div id ="bilder">
-            <img id ="bergenby" src="./bilder/d5740eeb-b8bd-4395-8757-90e7bf584c0f.webp" alt="Bilde av byen Bergen">
-            <h1 id ="Title">Bolig-by i Bergen</h1>
-        </div>
-        <div><a href="kontakt.html">kontakt</a></div>
-        <script>
+        <h1 id ="title">Møt Sebastian Ingebrigtsen</h1>
+        <figure id="profil">
+            <img src="Bilder/Sebastian.jpg" alt="Bilde av Sebastian Ingebrigtsen">
+            <figcaption>Boss man</figcaption>
+        </figure>
+        <nav id = tilbake><a href="about.html">Tilbake</a></nav>
+        <table>
+            <tr>
+                <th>Favoritt spårk</th>
+                <th>python</th>
+                <th><img id="" src="" alt="Bilde av python kode"></th>
+            </tr>
+            <tr>
+                <th>Favoritt spill</th>
+                <th>Dead by daylight</th>
+                <th><img id="" src="" alt="Bilde av Dead by daylight"></th>
+            </tr>
+            <tr>
+                <th>Favoritt kortspill</th>
+                <th>Magic the ghatering</th>
+                <th><img id="" src="" alt="Bilde av Magic the ghatering kort"></th>
+            </tr>
+            <tr>
+                <th>overtrøt</th>
+                <th>Ja</th>
+                <th><img id="" src="" alt="Bilde av Ja"></th>
+            </tr>
+            <tr>
+                <th>Ferdig med prosjekt</th>
+                <th>Nei</th>
+                <th><img id="" src="" alt="Bilde av Nei"></th>
+            </tr>
+        </table>
+            <p>Hei! Jeg er Sebastian, og har vært vår gruppe sin lokale «boss man». Jeg liker å programmere spesielt for løker og har alltid hatt lyst til å lage spill eller lignende i fremtiden. Håper du har likt siden vår så langt, og at du kommer til å kose deg videre med «Bolig i Bergen». Jeg er ikke den mest kreative skriveren og vet ikke helt hva jeg bør skrive om for de neste 147 ordene. Så dere får heller høre mine meninger om Lorem Ipsum. Jeg føler at når du skal teste tekstbokser på siden din, så er Lorem Ipsum et kjekt og greit verktøy. Det gjør det enkelt å se hvordan en nettside ser ut når den har tekst på forskjellige steder, uten at man trenger å finne på masse tekst bare for å fylle plass. Samtidig synes jeg det kan være litt kjedelig å se på Lorem Ipsum overalt. Hvis en nettside bruker det i den ferdige versjonen, kan det fort se ut som om siden ikke er helt ferdig. Derfor synes jeg det passer best når man lager og tester en nettside, og ikke nødvendigvis når nettsiden faktisk skal brukes av andre. Når jeg først snakker om nettsider, synes jeg også det er interessant hvor mye arbeid som faktisk ligger bak en enkel side. Det er ikke bare å skrive litt HTML og CSS og håpe på det beste. Man må også tenke på hvordan siden ser ut, hvordan brukeren finner fram, og hvordan alt fungerer sammen. Uansett håper jeg dere liker nettsiden vår og at dere finner en bolig i Bergen som passer for dere! </p>
+        
+            <h2 id="resultatspill">velg</h2>
+
             
+            <div id="quiz">
+                <h1>Den kule quizen!</h1>
+                <label for="navn">Skriv navnet ditt</label>
+                <input type="text" id="navn">
+                <label for="favorittLøkke">Hva er favorittløkke til Sebastian</label>
+                <input type="text" id="favorittLøkke" list="løkkeListe">
+                <label for="reisedato">Hvilken dato var påske?</label>
+                <input type="date" id="reisedato">
+                <label>Velg det du tror Sebastian har gjort i livet sitt!</label>
+            </div>
+            <div id="checkboxListe">
+                
+                <label>
+                    <input type="checkbox" id="skydiving"> skydiving
+                </label>
+                <label>
+                    <input type="checkbox" id="flytur"> flytur
+                </label>
+                <label>
+                    <input type="checkbox" id="badetISjøen"> badet i sjøen
+                </label>
+                <label>
+                    <input type="checkbox" id="backflip"> backflip
+                </label>
+                <p id="resultatquiz"></p>
+                <button onclick="sjekkSvar()">Sjekk svar</button>
+            </div>
+            <datalist id="løkkeListe">x
+                <option value="for løkke">
+                <option value="while løkke">
+            </datalist>
+            <p>Lagd av Sebastian</p>
+        <script>
+            let resultatEl = document.querySelector("#resultatspill");
+            let flyturEl = document.querySelector("#flytur");
+            let badetISjøenEl = document.querySelector("#badetISjøen");
+            let skydivingEl = document.querySelector("#skydiving");
+            let backflipEl = document.querySelector("#backflip");
+
+            function sjekkSvar() {
+                let poeng = 0;
+                let løkkeSvar = document.querySelector("#favorittLøkke").value;
+                let datoSvar = document.querySelector("#reisedato").value;
+
+                if (flyturEl.checked) {
+                    poeng++;
+                }
+                if (badetISjøenEl.checked) {
+                    poeng++;
+                }
+                if (skydivingEl.checked) {
+                    poeng--;
+                }
+                if (backflipEl.checked) {
+                    poeng--;
+                }
+                if (løkkeSvar === "for løkke") {
+                    poeng++
+                }
+                if (datoSvar ==="2026-03-27") {
+                    poeng++
+                }
+
+                document.getElementById("resultatquiz").innerHTML =("Du fikk " + poeng + "poeng!");
+            }
         </script>
     </body>
 </html>

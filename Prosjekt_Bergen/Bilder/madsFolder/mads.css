@@ -1,0 +1,45 @@
+html{
+
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+   background: linear-gradient(45deg, red, blue, purple);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container{
+  display: flex;
+}
+
+#gradientButton {
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+}
+
+#main {
+    backdrop-filter: blur(5px);
+     padding: 20px;
+     margin: 30px;
+     font-weight: bold;
+     background-color: rgba(255, 255, 255, 0.4);
+     color: black;
+     text-shadow: 2px 2px 39px;
+     border-radius:5px;
+     border-style:ridge;
+}
