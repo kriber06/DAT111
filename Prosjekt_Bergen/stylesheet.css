@@ -294,7 +294,6 @@ position: relative;
     margin: 8px;
     font-size: 15px;
 }
-
 /*<<<<< Oppussing CSS >>>>>>*/
 .tjeneste {
     display: flex;
@@ -366,48 +365,31 @@ position: relative;
     line-height: 1.6;
 }
 
-.tips {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+.top-links a.aktiv {
+    border-bottom: 3px solid #DCD7C9;
 }
 
-.tips .tekst {
-    flex: 1;
-}
-
-.tips img {
-    width: 350px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.tips.omvendt {
-    background-color: #222222;
-    color: #A27b5c;
-}
-
-.tips.omvendt ul {
-    background-color: #3a3a3a;
-    color: #DCD7C9;
-}
-
-.kontaktinfo {
+.hopp {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.kontaktinfo img {
-    width: 200px;
-    height: 120px;
-    object-fit: cover;
+.hopp a {
+    padding: 8px 18px;
+    border: 2px solid #A27B5C;
+    border-radius: 20px;
+    color: #2C3639;
+    text-decoration: none;
 }
 
-.kontaktliste {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+.hopp a hover {
+    background-color: #A27B5C;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
 }
