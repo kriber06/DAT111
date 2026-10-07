@@ -365,3 +365,49 @@ position: relative;
     color: #3F4E4F;
     line-height: 1.6;
 }
+
+.tips {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.tips .tekst {
+    flex: 1;
+}
+
+.tips img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tips.omvendt {
+    background-color: #222222;
+    color: #A27b5c;
+}
+
+.tips.omvendt ul {
+    background-color: #3a3a3a;
+    color: #DCD7C9;
+}
+
+.kontaktinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.kontaktinfo img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.kontaktliste {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
