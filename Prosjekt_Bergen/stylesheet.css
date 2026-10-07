@@ -276,9 +276,21 @@ position: relative;
 }
 
 .tips {
-    text-align: center; 
-    margin: 30px; 
-    background-color: #A27b5c;  
-    padding: 20px; 
+    text-align: left; 
+    margin: 10px auto; 
+    background-color: #A27b5c;
+    padding: 20px;
     border-radius: 10px;
+    width: 75%;
+}
+.tips ul{
+    background-color: rgb(223, 223, 223);
+    padding: 40px;
+    border-radius: 10px;
+    width: 75%;
+    margin: 0 auto;
+}
+.tips li{
+    margin: 8px;
+    font-size: 15px;
 }
