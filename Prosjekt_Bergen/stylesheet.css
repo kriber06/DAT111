@@ -305,6 +305,14 @@ position: relative;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translate(40px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.tjeneste.synlig {
+    opacity: 1;
+    transform: translate(0);
 }
 
 .tjeneste:nth-of-type(even) {
@@ -316,6 +324,15 @@ position: relative;
     height: 280px;
     object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.4s;
+}
+
+.tjeneste:hover img {
+    transform: scale(1);
+}
+
+.tjeneste-tekst {
+    flex: 1;
 }
 
 .tjeneste-tekst h2 {
