@@ -406,6 +406,24 @@ position: relative;
 html {
     scroll-behavior: smooth;
 }
+.hvorfor-oss {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.fordeler {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fordeler li::before{
+    content: "✓ ";
+    font-weight: bold;
+
+}
 /*--------------------------*/
 
 .tips {

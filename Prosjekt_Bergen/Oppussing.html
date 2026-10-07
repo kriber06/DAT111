@@ -35,11 +35,6 @@
                 <h2>Puss opp badet</h2>
                 <p>Drømmer du om eit nytt bad?</p>
                 <p>Badet er rommet der dagen starter og sluttar. Vi gjer det om til ein stad du gler deg til å gå inn i, med varme golv, godt lys og smarte løysingar som utnyttar kvar centimeter.</p>
-                <ul>
-                    <li>Fast pris utan skjulte kostnader</li>
-                    <li>Godkjende fagfolk</li>
-                    <li>Eit bad som held i mange år</li>
-                </ul>
                 <a class="knapp" href="kontakt.html">Få et tilbud hos oss</a>
             </div>
         </section> 
@@ -47,15 +42,17 @@
             <img src="./Bilder/Kjokken.webp" alt="Nyoppusset kjøkken">
             <div class="tjeneste-tekst">
                 <h2>Puss opp kjøkkenet</h2>
-                <p>Kort tekst om kjøkken</p>
-                <a class="knapp" href="kontakt.html">Få et tilbud hos oss</a>
+                <p>Kjøkkenet som gjer kvardagen enklare</p>
+                <p>Vi teiknar kjøkkenet rundt slik du brukar det, med romslege skuffar, slitesterke benkeplater og plass til heile familien.</p>
+                <a class="knapp" href="kontakt.html">Sjå kva vi kan få til på ditt kjøkken</a>
             </div>
         </section>
         <section class ="tjeneste" id="soverom">
             <img src="./Bilder/Soverom.jpg" alt="Nyoppusset soverom">
             <div class="tjeneste-tekst">
                 <h2>Puss opp soverom</h2>
-                <p>Kort tekst om soverom</p>
+                <p>Sov betre. Våkn rolegare</p>
+                <p>Rolege fargar, mjukt lys og god plass til klede gir det eit ryddig og behageleg rom å kvile i.</p>
                 <a class="knapp" href="kontakt.html">Få et tilbud hos oss</a>
             </div>
         </section>
@@ -63,11 +60,20 @@
             <img src="./Bilder/stue.jpg" alt="Nyoppusset stue">
             <div class="tjeneste-tekst">
                 <h2>Puss opp stue</h2>
-                <p>Kort tekst om stue</p>
+                <p>Ei stue du ikkje vil forlate</p>
+                <p>Vi set saman møblar, fargar og lys slik at stua passar like godt til filmkveld som til besøk</p>
                 <a class="knapp" href="kontakt.html">Få et tilbud hos oss</a>
             </div>
         </section> 
 
+        <section class="hvorfor-oss">
+            <h2>Kvifor velge oss</h2>
+            <ul class="fordeler">
+                <li>Fast pris utan skjulte kostnader</li>
+                <li>Godkjende fagfolk</li>
+            </ul>
+            <a class="knapp" href="kontakt.html">Kontakt oss for eit uforpliktande tilbud</a>
+        </section>
      
         <script>
             const kort = document.querySelectorAll(".tjeneste");
@@ -78,7 +84,6 @@
                     }
                 });
             }, { threshold: 0.2 });
-
             kort.forEach(function (k) {
                 observer.observe(k);
             });
