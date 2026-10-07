@@ -392,3 +392,22 @@ position: relative;
     background-color: #3a3a3a;
     color: #DCD7C9;
 }
+
+.kontaktinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.kontaktinfo img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.kontaktliste {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
