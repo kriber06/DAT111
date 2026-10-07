@@ -274,3 +274,11 @@ position: relative;
     border-radius: 10px;
     font-size: 20px;
 }
+
+.tips {
+    text-align: center; 
+    margin: 30px; 
+    background-color: #A27b5c;  
+    padding: 20px; 
+    border-radius: 10px;
+}
