@@ -1,17 +1,16 @@
 html{
-
+   background: linear-gradient(300deg, #162d0d, #c0c0c0, #000000);
+    background-size: 4000% 4000%;
+    animation: gradient 20s ease infinite;
 }
 
 body {
   margin: 0;
-  overflow: hidden;
-   background: linear-gradient(45deg, red, blue, purple);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
 }
+
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 10% 50%;
     }
 
     50% {
@@ -19,21 +18,21 @@ body {
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 50% 10% 0%;
     }
 }
 .container{
   display: flex;
+  align-items: stretch;
 }
 
-#gradientButton {
-    border-radius: 5px;
-    height: 200px;
-    width: 200px;
+.container > div {
+    flex: 1;
+    min-width: 0;
 }
 
-#main {
-    backdrop-filter: blur(5px);
+#head, #main, #musikk, #film, #tilbake, #tabellen {
+     backdrop-filter: blur(5px);
      padding: 20px;
      margin: 30px;
      font-weight: bold;
@@ -42,4 +41,116 @@ body {
      text-shadow: 2px 2px 39px;
      border-radius:5px;
      border-style:ridge;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height:22px;
+}
+
+#main img { height: 150px; }
+
+#main p { margin: 0; }
+
+li {
+	margin: 0;
+	padding: 36px 0 36px 50px;
+	list-style: none;
+	background-image: url("mads-punkter.png");
+	background-position: left center;
+	background-size: 35px;
+    background-repeat: no-repeat;
+}
+
+.album, .filmer {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border: 1.5px solid black;
+    border-style: solid;
+}
+
+.albumbody, .filmbody {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 20px;
+    gap: 10px;
+}
+
+#head {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Papyrus, fantasy;
+    font-size: 2rem;
+    top: 0;
+    position: sticky;
+    z-index: 9999;
+}
+
+#tilbake {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 18px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#tilbake:hover {
+    background: linear-gradient(350deg, red, #c0c0c0, #000000);
+    background-size: 40% 40%;
+    animation: gradient 3s ease infinite;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    text-align: left;
+}
+
+th { background-color: rgba(0, 0, 0, 0.15); }
+
+@media (max-width: 800px) {
+    .container { flex-direction: column; }
+}
+
+#tilbake h5{ margin: 0; }
+#head h1 { margin: 0; }
+
+td {
+    border-style: none;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+td:nth-child(even), td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+#tableHeaders {
+    background-color: #162d0d;
+    color: white;
+}
+
+#tableConntent {
+    color: #000000;
+}
+
+#tabellen {
+    color: #000000;
 }

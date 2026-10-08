@@ -1,1 +1,113 @@
-<link rel="stylesheet" href="lassestyle.css">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lasse's hjemmeside</title>
+    <link rel="stylesheet" href="lassestyle.css">
+</head>
+
+<body>
+<a class="tilbake" href="about.html">← Tilbake</a>
+    <h1>Lasse Kvalsund Jarnes</h1>
+    <p>Velkommen til min hjemmeside!</p>
+
+    
+    <div class="profil">
+
+        <div class="stats">
+            <h2>STATS</h2>
+            <table>
+                <tr><td>Styrke</td><td>3</td></tr>
+                <tr><td>Stamina</td><td>1</td></tr>
+                <tr><td>Hastighet</td><td>5</td></tr>
+                <tr><td>Intelligens</td><td>999999999999999999</td></tr>
+                <tr><td>Karisma</td><td>-4</td></tr>
+            </table>
+            <p class="mentalitet">
+                <b>Mentalitet:</b><br>
+                Umotivert og paranoid
+            </p>
+        </div>
+
+        <img class="hovedbilde" src="Bilder/smoke.png" alt="Bilder">
+
+    </div>
+
+    <div class="favoritter">
+         <h2>Mine favoritter</h2>
+
+        <div class="knapper">
+            <button onclick="vis('film', this)" class="aktiv">Film</button>
+            <button onclick="vis('spill', this)">Spill</button>
+            <button onclick="vis('mat', this)">Mat</button>
+            <button onclick="vis('drikke', this)">Drikke</button>
+            <button onclick="vis('alkohol', this)">Drikke (alkohol)</button>
+            <button onclick="vis('sang', this)">Sang</button>
+        </div>
+
+        <div id="film" class="favoritt synlig">
+            <img src="Bilder/Doomsday.jpg">
+            <div>
+                <h3>Avengers - Doomsday</h3>
+                <p>Filmen har ikkje engang komt ut enda, men eg er so hypa at eg veit den kjem til å bli min favoritt film</p>
+            </div>
+        </div>
+
+        <div id="spill" class="favoritt">
+            <img src="Bilder/ds2.jpg">
+            <div>
+                <h3>Dark souls II</h3>
+                <p>Ditta spele lowkey sug men det er også litt gøy</p>
+            </div>
+        </div>
+
+        <div id="mat" class="favoritt">
+            <img src="Bilder/Chickn.jpg">
+            <div>
+                <h3>Chicken tikki masala</h3>
+                <p>Chicken tikki masala he alltid vert min favoritt mattrett sida eg smakte den får første gang, den består av kyllingbita servert med en krydra saus som inneheld tomat og fløte, servert med ris og ikkje minst nan brød</p>
+            </div>
+        </div>
+
+        <div id="drikke" class="favoritt">
+            <img src="Bilder/isbi.jpg" alt="Bilder">
+            <div>
+                <h3>Vatn (med isbita)</h3>
+                <p>Beste tørstedrikka er alltid vatn, men berre vist det er med isbita</p>
+            </div>
+        </div>
+
+        <div id="alkohol" class="favoritt">
+            <img src="Bilder/gin.jpg">
+            <div>
+                <h3>Gin tonic</h3>
+                <p>Du kan aldri gå feil med en gin tonic, ingrediensane er lowkey crazy, først so er det gin, åsso er det tonic</p>
+            </div>
+        </div>
+
+        <div id="sang" class="favoritt">
+            <img src="Bilder/nightcall.jpg">
+            <div>
+                <h3>Nightcall - Kavinsky</h3>
+                <p>Eg hørte på dinna sangen når eg kjørte aleine får første gang, og det var en fantastisk opplevelse (Rip Kavinsky)</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function vis(id, knapp) {
+
+            for (var k of document.querySelectorAll(".knapper button")) {
+                k.classList.remove("aktiv");
+            }
+            for (var f of document.querySelectorAll(".favoritt")) {
+                f.classList.remove("synlig");
+            }
+
+            knapp.classList.add("aktiv");
+            document.getElementById(id).classList.add("synlig");
+        }
+    </script>
+
+</body>
+</html>
