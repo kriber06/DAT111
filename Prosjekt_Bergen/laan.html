@@ -1,17 +1,16 @@
 <!doctype html>
 <html lang="no">
     <head>
-        <link rel="stylesheet" href="stylesheet.css"> 
-        <title>Bolig i Bergen kontakt</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Bolig i Bergen lån</title>
         <meta charset="utf-8">
     </head>
 
-
     <body>
-        <div class="headline"><a href="Index.html"><img class = "logo" src="./Bilder/logo.png" alt="Logo for bolig i Bergen"></a>
+        <div class="headline"><a href="Index.html"><img class="logo" src="./Bilder/logo.png" alt="Logo for bolig i Bergen"></a>
             <nav class="top-links">
                 <a href="about.html">Om oss</a>
-                <a href="Oppussing.html">Oppusing</a>
+                <a href="Oppussing.html">Oppussing</a>
                 <a href="Trelast.html">Trelast</a>
                 <a href="kontakt.html">Kontakt</a>
                 <a href="Tips.html">Tips</a>
@@ -20,6 +19,134 @@
             </nav>
         </div>
 
+        <h1 class="content">Lån</h1>
 
+        <div class="laan-intro">
+            <p>Svar på noen raske spørsmål, så ser du om du sannsynligvis kvalifiserer for boliglån. Dette er kun en veiledning, det er banken som avgjør til slutt.</p>
+        </div>
+
+        <!-- BILDE: bytt ut filnavnet under med ditt eget bilde i Bilder-mappa -->
+        <img class="laan-bilde" src="./Bilder/boliglaan.jpg" alt="Bilde om boliglån">
+
+        <div class="quiz">
+
+            <p id="teller">Spørsmål 1 av 7</p>
+
+            
+            <div class="sporsmal synlig">
+                <h2>Hva slags lån vil du ha?</h2>
+                <button onclick="laan = 'kjøpe bolig'; neste()">Kjøpe bolig</button>
+                <button onclick="laan = 'bygge nytt hus'; neste()">Bygge nytt hus</button>
+                <button onclick="laan = 'refinansiere lånet ditt'; neste()">Refinansiere (flytte eller slå sammen lån)</button>
+                <button onclick="laan = 'pusse opp boligen'; neste()">Pusse opp boligen</button>
+            </div>
+
+            
+            <div class="sporsmal">
+                <h2>Er du 18 år eller eldre?</h2>
+                <button onclick="neste()">Ja</button>
+                <button onclick="neste('Du må være minst 18 år.')">Nei</button>
+            </div>
+
+            
+            <div class="sporsmal">
+                <h2>Har du fast inntekt (jobb, pensjon eller trygd)?</h2>
+                <button onclick="neste()">Ja</button>
+                <button onclick="neste('Du trenger en fast og stabil inntekt.')">Nei</button>
+            </div>
+
+            
+            
+<div class="sporsmal">
+    <h2>Har du minst 10 % egenkapital?</h2>
+    <button onclick="neste()">Ja</button>
+    <button onclick="neste('Du trenger minst 10 % egenkapital.')">Nei</button>
+</div>
+
+            
+            
+<div class="sporsmal">
+    <h2>Vil samla gjeld (med det nye lånet) bli over 5 ganger årsinntekta di før skatt?</h2>
+    <button onclick="neste('Samla gjeld kan ikkje vere over 5 ganger årsinntekta.')">Ja</button>
+    <button onclick="neste()">Nei</button>
+</div>
+
+           
+            <div class="sporsmal">
+                <h2>Har du betalingsanmerkninger?</h2>
+                <button onclick="neste('Betalingsanmerkninger gjør det vanskelig å få lån.')">Ja</button>
+                <button onclick="neste()">Nei</button>
+            </div>
+
+            
+            <div class="sporsmal">
+                <h2>Hvilken bank bruker du?</h2>
+                <button onclick="bank = 'DNB'; neste()">DNB</button>
+                <button onclick="bank = 'Nordea'; neste()">Nordea</button>
+                <button onclick="bank = 'Handelsbanken'; neste()">Handelsbanken</button>
+                <button onclick="bank = 'sparebanken din'; neste()">En sparebank</button>
+                <button onclick="bank = 'banken din'; neste()">Annen bank</button>
+            </div>
+
+            
+            <div id="resultat" class="resultat">
+                <div id="resultattekst"></div>
+                <button onclick="location.reload()">Start på nytt</button>
+            </div>
+
+        </div>
+
+        <script>
+            var nr = 0;       
+            var feil = [];    
+            var laan = "";
+            var bank = "";
+
+            function neste(grunn) {
+
+                
+                if (grunn) {
+                    feil.push(grunn);
+                }
+
+                var sporsmal = document.querySelectorAll(".sporsmal");
+
+                
+                sporsmal[nr].classList.remove("synlig");
+                nr = nr + 1;
+
+                if (nr < sporsmal.length) {
+                    sporsmal[nr].classList.add("synlig");
+                    document.getElementById("teller").textContent =
+                        "Spørsmål " + (nr + 1) + " av " + sporsmal.length;
+                } else {
+                    visResultat();
+                }
+            }
+
+            function visResultat() {
+                document.getElementById("teller").style.display = "none";
+
+                var tekst = document.getElementById("resultattekst");
+
+                if (feil.length == 0) {
+                    tekst.innerHTML =
+                        "<h2>Gratulerer!</h2>" +
+                        "<p>Ut fra svarene dine kan du sannsynligvis få boliglån for å " + laan + ".</p>" +
+                        "<p>Ta kontakt med " + bank + " for å søke.</p>";
+                } else {
+                    var liste = "";
+                    for (var i = 0; i < feil.length; i++) {
+                        liste = liste + "<li>" + feil[i] + "</li>";
+                    }
+                    tekst.innerHTML =
+                        "<h2>Dessverre</h2>" +
+                        "<p>Ut fra svarene dine kan du sannsynligvis ikke få boliglån akkurat nå:</p>" +
+                        "<ul>" + liste + "</ul>";
+                }
+
+                document.getElementById("resultat").classList.add("synlig");
+            }
+        </script>
     </body>
-<html
+</html>

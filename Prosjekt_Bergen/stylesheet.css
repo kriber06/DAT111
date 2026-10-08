@@ -567,3 +567,87 @@ html {
     line-height: 1.6;
     margin-bottom: 6px;
 }
+
+.laan-intro {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.laan-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.laan-bilde {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.quiz {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #A27b5c;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.quiz h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+#teller {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.quiz button {
+    display: block;
+    width: 80%;
+    margin: 12px auto;
+    padding: 14px;
+    font-size: 20px;
+    background-color: #DCD7C9;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quiz button:hover {
+    background-color: #2C3639;
+    color: white;
+}
+
+.sporsmal {
+    display: none;
+}
+
+.sporsmal.synlig {
+    display: block;
+}
+
+.resultat {
+    display: none;
+}
+
+.resultat.synlig {
+    display: block;
+}
+
+.resultat ul {
+    text-align: left;
+    background-color: #DCD7C9;
+    padding: 20px 20px 20px 40px;
+    border-radius: 8px;
+}
