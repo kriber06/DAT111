@@ -673,3 +673,71 @@ html {
     padding: 20px 20px 20px 40px;
     border-radius: 8px;
 }
+
+.tjenester-side {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("Bilder/tjenestebild.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.tjenester-side .side_intro {
+    max-width: 480px;
+    margin: 50px auto 30px;
+    padding: 25px 35px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+}
+
+.tjenester-side .side_intro h1,
+.tjenester-side .side_intro p {
+    color: white;
+}
+
+.tjenester-cta {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.tjenester-cta h2,
+.tjenester-cta p {
+    color: white;
+}
+.tjenester-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.tjeneste-kort {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.tjeneste-kort h2 {
+    margin-top: 0;
+    font-size: 26px;
+    color: #2C3639;
+}
+
+.tjeneste-kort p {
+    max-width: 320px;
+    margin: 0 auto 10px;
+    color: #3F4E4F;
+    line-height: 1.6;
+}
+
+.tjenester-cta {
+    text-align: center;
+    padding: 30px 20px 50px;
+}
