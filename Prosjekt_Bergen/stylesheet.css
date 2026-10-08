@@ -246,7 +246,7 @@ position: relative;
     column-gap: 20px;
 }
 
-#bilderKontact {
+.bilderKontact {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -453,6 +453,28 @@ html {
     color: #DCD7C9;
 }
 
+.kontaktprofiler {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #A27b5c;
+}
+
+.person {
+    flex: 1;
+    max-width: 200px;
+    margin: 0;
+    text-align: center;
+}
+
+.person img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
 .kontaktinfo {
     display: flex;
     justify-content: center;
@@ -476,7 +498,7 @@ html {
     border-bottom: 3px solid #DCD7C9;
 }
 
-#kontaktTitler {
+.kontaktTitler {
     display: flex;
     flex-direction: row;
     position: relative;
