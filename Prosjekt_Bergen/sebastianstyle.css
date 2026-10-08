@@ -58,7 +58,7 @@ a:visited,
 
 table {
     width: 100%;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 24px auto;
     border-collapse: collapse;
     font-size: 1rem;
@@ -78,7 +78,8 @@ th {
 }
 
 td {
-    background-color: #F4F0E8;
+    background-color: #A27B5C;
+    color: #FFFFFF;
 }
 
 table + p {
@@ -103,4 +104,31 @@ button {
 }
 button:active {
   transform: translate(2px,2px);
+}
+
+#quiz {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#quiz > label {
+    display: block;
+    margin: 20px auto 0;
+    font-size: 20px;
+}
+#checkboxListe {
+    width: fit-content;
+    margin: 0 auto;
+}
+#checkboxListe > label {
+    display: block;
+
+}
+
+.bilderITabel {
+    max-width: 300px;
+    max-height: 150px;
+    height: auto;
 }
