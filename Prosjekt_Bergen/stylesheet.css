@@ -769,3 +769,45 @@ html {
     font-size: 20px !important;
     line-height: 1.6;
 }
+
+
+.kontakt-side {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("Bilder/Kontakt-oss.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.kontakt-side h1 {
+    color: white;
+}
+
+.kontakt-side .kontaktinfo {
+    max-width: 600px;
+    margin: 30px auto 15px;
+    padding: 25px 35px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+}
+
+.kontakt-side .kontaktinfo p {
+    color: white;
+    font-size: 20px;
+}
+
+.kontakt-side .kontaktliste {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px 35px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+}
+
+.kontakt-side .kontaktliste li {
+    color: white;
+    font-size: 18px;
+    margin: 8px 0;
+}
