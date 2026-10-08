@@ -36,6 +36,7 @@
          <h2>Mine favoritter</h2>
 
         <div class="knapper">
+            <div class="glider"></div>
             <button onclick="vis('film', this)" class="aktiv">Film</button>
             <button onclick="vis('spill', this)">Spill</button>
             <button onclick="vis('mat', this)">Mat</button>
@@ -48,7 +49,7 @@
             <img src="Bilder/Doomsday.jpg">
             <div>
                 <h3>Avengers - Doomsday</h3>
-                <p>Filmen har ikkje engang komt ut enda, men eg er so hypa at eg veit den kjem til å bli min favoritt film</p>
+                <p>Filmen har ikkje engang komt ut enda, men eg er so hypa at eg veit den kjem til å bli favorittfilmen min</p>
             </div>
         </div>
 
@@ -106,7 +107,28 @@
 
             knapp.classList.add("aktiv");
             document.getElementById(id).classList.add("synlig");
+
+            flyttGlider(knapp);
         }
+
+        function flyttGlider(knapp) {
+            var glider = document.querySelector(".glider");
+            glider.style.left = knapp.offsetLeft + "px";
+            glider.style.top = knapp.offsetTop + "px";
+            glider.style.width = knapp.offsetWidth + "px";
+            glider.style.height = knapp.offsetHeight + "px";
+        }
+
+        window.addEventListener("load", function () {
+            flyttGlider(document.querySelector(".knapper button.aktiv"));
+            setTimeout(function () {
+                document.querySelector(".glider").classList.add("klar");
+            }, 50);
+        });
+
+        window.addEventListener("resize", function () {
+            flyttGlider(document.querySelector(".knapper button.aktiv"));
+        });
     </script>
 
 </body>
