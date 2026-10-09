@@ -6,7 +6,6 @@ body {
 .headline {
     display: flex;
     justify-content: left;
-    align-items: left;
     font-size: 3vw;
     font-weight: bold;
     border-bottom: 1px solid gray;
