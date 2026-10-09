@@ -100,18 +100,16 @@ position: relative;
     width: 60%;
     height: 60%;
     gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-                       "a a b b"
-                       "a a b b"
-                       "a a b b"
-                       "c c d d"
-                       "c c d d"
-                       "c c d d"
-                       "e e f f"
-                       "e e f f"
-                       "e e f f";
+                       "a a b b c c"
+                       "a a b b c c"
+                       "a a b b c c"
+                       "d d e e f f"
+                       "d d e e f f"
+                       "d d e e f f"
+                       ;
 }
 #conteiner > div {
   background-color: #aac9c6;
@@ -141,10 +139,10 @@ position: relative;
 
 }
 
-.protreter{
-  max-width: 100%;
-  width: 200px;
-  height: auto;
+.protreter {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
 }
 
 .content {
