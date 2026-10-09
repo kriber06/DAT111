@@ -666,6 +666,19 @@ html {
     margin: 8px 0;
 }
 
+.kontakt-side .kontaktliste label {
+    color: white;
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+#storTekstboks {
+width: 100%;
+min-height: 100px;
+box-sizing: border-box;
+resize: vertical;
+}
+
 .tjenester-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
