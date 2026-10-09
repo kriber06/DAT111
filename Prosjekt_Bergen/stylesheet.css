@@ -416,6 +416,13 @@ html {
     align-items: flex-start;
 }
 
+.trelast-rad2 {
+margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
 .trelast-kort {
     flex: 1;
     background-color: #DCD7C9;
