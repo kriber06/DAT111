@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="no">
     <head>
         <link rel="stylesheet" href="jeamraystyle.css">
         <title>Om oss/Jeamray/</title>
+        <meta charset="utf-8">
     </head>
 
     <body>
@@ -24,11 +25,11 @@
         
         <!--Bilder-->
         <img src="../jeamray.jpg" alt="Jeamray">
-        <img src="../26hogcycle.jpeg">
+        <img src="../26hogcycle.jpeg" alt="Bilde av hog cycle deck i Clash Royale">
         
         <!--Om Meg-->
         <h2 id="om-meg">Om Meg</h2>
-        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/37Tmv4NnfQeb0ZgUC4fOJj?utm_source=generator&si=e06af9554aed41d6" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe id="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/37Tmv4NnfQeb0ZgUC4fOJj?utm_source=generator&si=e06af9554aed41d6" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <p> Eg er 20 år, og kjem frå ei lita bygd. No studerer eg som dataingeniør ved HVL i Bergen.
             Eit av mine mange hobbyer er blant anna å spele gitar, lage mat og programmere. Språkene eg har lært i programmering 
             er i hovudsak Java, men eg har også lært korleis litt om Python og pga av denne prosjektet har eg også lært litt om
@@ -70,7 +71,7 @@
 
         <!--Easter Egg-->
         <h2 id="pi">Pi-quiz</h2>
-        <p id="pi">Hva er Pi? (Visst du vil sjå noko kult :D)</p>
+        <p>Hva er Pi? (Visst du vil sjå noko kult :D)</p>
         <input type="text" id="svar" placeholder="Skriv her">
         <button onclick="sjekk()">Sjekk</button>
         <p id="epost"></p>
